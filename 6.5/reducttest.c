@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <omp.h>
 
-#define N 1000000000  // 数组大小
+#define N 1000000000  // 数组大小 第二个1e9
 double sum_with_reduction(double *array, int n) {
     double sum = 0.0;
     #pragma omp parallel for reduction(+:sum)
